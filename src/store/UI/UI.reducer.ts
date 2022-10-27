@@ -9,8 +9,11 @@ const UISlice = createSlice({
     toggleDarkMode: (state: UIState) => {
       state.darkMode = !state.darkMode;
     },
+    toggleBurgerMenu: (state) => {
+      state.isBurgerMenuOpen = !state.isBurgerMenuOpen;
+    },
   },
 });
 
-export const { toggleDarkMode } = UISlice.actions;
+export const { toggleDarkMode, toggleBurgerMenu } = UISlice.actions;
 export const { reducer: UIReducer } = UISlice;

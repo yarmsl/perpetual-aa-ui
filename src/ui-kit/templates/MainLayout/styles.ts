@@ -1,14 +1,12 @@
 import { SxProps } from '@mui/material';
 
-export const styles: Record<string, SxProps> = {
-  root: {
-    flexGrow: 1,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    pt: { xs: '110px', md: '64px' },
-  },
-  main: {
-    flexGrow: 1,
-  },
+export const rootStyles: SxProps = {
+  width: '100%',
+  minHeight: '100vh',
+  display: 'grid',
+  gridTemplateColumns: '1fr',
+  gridTemplateRows: 'auto 1fr auto',
+  gridColumnGap: '0px',
+  gridRowGap: '0px',
+  paddingLeft: { xs: 'unset', md: '66px', xl: '280px' },
 };
