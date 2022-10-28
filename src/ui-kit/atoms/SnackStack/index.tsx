@@ -2,9 +2,10 @@ import { FC, memo, useCallback, useMemo } from 'react';
 
 import { SnackbarCloseReason } from '@mui/material';
 
-import SnackStackLayout from './SnackStack';
 import { useAppDispatch, useAppSelector } from '~/store';
 import { closeSnackAction, snackBarsStackSelector } from '~/store/SnackStack';
+
+import SnackStackLayout from './SnackStack';
 
 const SnackStack: FC<ISnackStackProps> = ({
   anchorOrigin = undefined,

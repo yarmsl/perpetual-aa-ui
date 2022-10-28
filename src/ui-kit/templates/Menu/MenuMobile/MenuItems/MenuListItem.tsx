@@ -2,21 +2,20 @@ import { FC, memo, useCallback } from 'react';
 
 import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 
-import { menuItemRootStyles, menuItemTextStyles } from './styles';
-import { useMedia } from '~/hooks/useMedia';
 import { useRouter } from '~/hooks/useRouter';
 import { useAppDispatch } from '~/store';
 import { toggleBurgerMenu } from '~/store/UI';
 
+import { menuItemRootStyles, menuItemTextStyles } from './styles';
+
 const CreateItem: FC<IMenuListItem> = ({ pathname, primaryText, secondaryText, Icon }) => {
   const dispatch = useAppDispatch();
   const { goTo, getIsSelectedByParentRoute } = useRouter();
-  const { isPortable } = useMedia();
 
   const handleClick = useCallback(() => {
     goTo(pathname);
-    if (isPortable) dispatch(toggleBurgerMenu());
-  }, [dispatch, goTo, isPortable, pathname]);
+    dispatch(toggleBurgerMenu());
+  }, [dispatch, goTo, pathname]);
 
   return (
     <ListItemButton
@@ -25,7 +24,7 @@ const CreateItem: FC<IMenuListItem> = ({ pathname, primaryText, secondaryText, I
       onClick={handleClick}
     >
       <ListItemIcon>
-        <Icon fontSize='large' />
+        <Icon />
       </ListItemIcon>
       <ListItemText primary={primaryText} secondary={secondaryText} sx={menuItemTextStyles} />
     </ListItemButton>

@@ -1,7 +1,7 @@
 import { FC, memo, Suspense, useMemo } from 'react';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 import { Box, Paper, SxProps, Tab, Tabs } from '@mui/material';
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 import { getUrlParamByPosition } from '~/helpers/url';
 import Loading from '~/ui-kit/atoms/Loading';
@@ -38,22 +38,21 @@ const styles: Record<string, SxProps> = {
     width: '100%',
     minHeight: '100%',
     display: 'flex',
+    flexDirection: 'column',
   },
   tabs: {
     width: '100%',
-    pl: { xs: '20px', sm: '28px', md: '96px', xl: '310px' },
-    pr: '24px',
-    position: 'fixed',
+    pl: { xs: '6px', sm: '8px' },
+    pr: '8px',
     bgcolor: 'background.default',
     zIndex: 'appBar',
-    left: 0,
-    transition: 'box-shadow 250ms ease-in-out',
+    top: '72px',
+    position: 'sticky',
   },
   wrapper: {
     flexGrow: 1,
     width: '100%',
     p: '12px',
-    mt: '56px',
     display: 'flex',
     flexDirection: 'column',
   },

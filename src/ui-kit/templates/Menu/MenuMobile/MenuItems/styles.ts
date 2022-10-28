@@ -11,9 +11,8 @@ export const menuItemTextStyles: SxProps = {
 
 export const menuItemRootStyles: SxProps = {
   width: '100%',
+  height: { sm: 'unset', md: '100%' },
   minHeight: '58px',
-  p: '1px 12px',
-  borderRadius: 2,
-
   whiteSpace: 'nowrap',
+  p: '1px 12px',
 };

@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 import { CssBaseline, ThemeProvider, StyledEngineProvider } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
-import { BrowserRouter } from 'react-router-dom';
 
 import Router from '~/Router';
 import { useAppSelector } from '~/store';

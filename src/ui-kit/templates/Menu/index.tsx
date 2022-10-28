@@ -1,6 +1,5 @@
 import { FC, lazy, memo, Suspense } from 'react';
 
-import MenuDesktop from './MenuDesktop';
 import { useMedia } from '~/hooks/useMedia';
 import Loading from '~/ui-kit/atoms/Loading';
 
@@ -16,7 +15,7 @@ const Menu: FC = () => {
       </Suspense>
     );
 
-  return <MenuDesktop />;
+  return null;
 };
 
 export default memo(Menu);
