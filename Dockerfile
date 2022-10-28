@@ -2,7 +2,6 @@
 FROM node:16-alpine AS builder
 WORKDIR /web
 ADD package.json package.json
-ADD package-lock.json package-lock.json
 RUN yarn install
 ADD . .
 RUN yarn build
