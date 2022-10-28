@@ -18,6 +18,4 @@ export const navBoxStyles: SxProps = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
-  p: '4px',
-  gap: '4px',
 };

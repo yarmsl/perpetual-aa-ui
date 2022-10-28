@@ -1,7 +1,7 @@
 import { ChangeEvent, FC, memo, useCallback } from 'react';
+import { Controller, useFormContext } from 'react-hook-form';
 
 import { TextField } from '@mui/material';
-import { Controller, useFormContext } from 'react-hook-form';
 
 const MegaTextField: FC<IControlledTextFieldProps> = ({
   children,

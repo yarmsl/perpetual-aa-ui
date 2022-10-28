@@ -4,7 +4,18 @@ import HelmetTitle from '~/ui-kit/atoms/Meta/';
 
 const Token: FC = () => (
   <>
-    <HelmetTitle title='Family' />
+    <HelmetTitle title='Create Token' />
+    <h1>Token</h1>
+    <h1>Token</h1>
+    <h1>Token</h1>
+    <h1>Token</h1>
+    <h1>Token</h1>
+    <h1>Token</h1>
+    <h1>Token</h1>
+    <h1>Token</h1>
+    <h1>Token</h1>
+    <h1>Token</h1>
+    <h1>Token</h1>
     <h1>Token</h1>
   </>
 );

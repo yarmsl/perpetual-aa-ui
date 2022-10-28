@@ -1,9 +1,9 @@
 import { FC, memo } from 'react';
+import { FormProvider, useForm } from 'react-hook-form';
+import QRCode from 'react-qr-code';
 
 import QrCodeIcon from '@mui/icons-material/QrCode';
 import { Box, Button, IconButton } from '@mui/material';
-import { FormProvider, useForm } from 'react-hook-form';
-import QRCode from 'react-qr-code';
 
 import { useAppDispatch } from '~/store';
 import { openModal } from '~/store/ModalStack';

@@ -1,5 +1,4 @@
 import { FC } from 'react';
-
 import { Route, Routes } from 'react-router-dom';
 
 import { createPageConf } from '~/configurations/tabsRouter';

@@ -2,8 +2,9 @@ import { FC, memo } from 'react';
 
 import { Box, IconButton } from '@mui/material';
 
-import { styles } from './styles';
 import { socialLinks } from '~/configurations/socialLinks';
+
+import { styles } from './styles';
 
 const SocialBlock: FC = () => (
   <Box sx={styles.root}>

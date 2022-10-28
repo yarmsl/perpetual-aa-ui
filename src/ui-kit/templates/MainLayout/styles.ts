@@ -8,5 +8,4 @@ export const rootStyles: SxProps = {
   gridTemplateRows: 'auto 1fr auto',
   gridColumnGap: '0px',
   gridRowGap: '0px',
-  paddingLeft: { xs: 'unset', md: '66px', xl: '280px' },
 };
