@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(polidor.ru www.polidor.ru)
+domains=(perpetual-aa.org)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="slideryo@gmail.com" # Adding a valid address is strongly recommended
