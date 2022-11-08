@@ -15,6 +15,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import ObyteProvider from './services/ObyteProvider';
 
 function App(): JSX.Element {
   const darkMode = useAppSelector(darkModeSelector);
@@ -23,9 +24,11 @@ function App(): JSX.Element {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={currentTheme}>
         <CssBaseline />
+        {/* <ObyteProvider> */}
         <BrowserRouter>
           <Router />
         </BrowserRouter>
+        {/* </ObyteProvider> */}
         <SnackStack />
         <ModalStack />
       </ThemeProvider>

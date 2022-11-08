@@ -5,6 +5,7 @@ import { persistReducer, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
 import { ModalStackReducer } from './ModalStack';
+import { obyteApi } from './Obyte/Obyte.service';
 import { SnackStackReducer } from './SnackStack';
 import { UIReducer } from './UI';
 
@@ -18,11 +19,13 @@ const rootReducer = combineReducers({
   modalStack: ModalStackReducer,
   snackStack: SnackStackReducer,
   ui: persistReducer(UIPersistConfig, UIReducer),
+  [obyteApi.reducerPath]: obyteApi.reducer,
 });
 
 const appStore = configureStore({
   reducer: rootReducer,
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: false }),
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({ serializableCheck: false }).concat(obyteApi.middleware),
 });
 
 export const persistor = persistStore(appStore);
