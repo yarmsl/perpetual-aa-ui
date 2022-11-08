@@ -7,7 +7,6 @@ export const menuItems: IMenuListItem[] = [
   {
     pathname: 'create',
     primaryText: 'Create',
-    secondaryText: 'Family or Token',
     Icon: AddCircleRoundedIcon,
   },
   {
