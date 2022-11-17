@@ -50,9 +50,9 @@ export const theme = (darkMode: boolean): Theme =>
               contrastText: '#2b2e5c',
             },
             secondary: {
-              dark: '#ff8c6f',
-              main: '#ffa16f',
-              light: '#fff1cc',
+              dark: '#1a4780',
+              main: '#1560bd',
+              light: '#3a75c4',
               contrastText: '#fff',
             },
             background: {
@@ -83,9 +83,9 @@ export const theme = (darkMode: boolean): Theme =>
               contrastText: '#fff',
             },
             secondary: {
-              dark: '#ff8c6f',
-              main: '#ffa16f',
-              light: '#fff1cc',
+              dark: '#1a4780',
+              main: '#1560bd',
+              light: '#3a75c4',
               contrastText: '#fff',
             },
             background: {
